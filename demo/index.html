@@ -14,7 +14,9 @@
             <div id="streamURL">
                 <div class="url-input">
                     <label for="sURL">Stream URL:</label>
-                    <input id="sURL" type="text" value="http://dell.dltdzc.com:554/01" />
+                    <input id="sURL" type="text" value="ws://192.168.1.31:8100/rtsp" />
+                    <!-- todo 公网部署使用 待配置-->
+<!--                    <input id="sURL" type="text" value="ws://dell.dltdzc.com:8100/rtsp" />-->
                     <button onclick="switch_mds()">Switch to MediaDataSource</button>
                 </div>
                 <div class="options">
@@ -31,7 +33,7 @@
             <div id="mediaSourceURL" class="hidden">
                 <div class="url-input">
                     <label for="msURL">MediaDataSource JsonURL:</label>
-                    <input id="msURL" type="text" value="http://127.0.0.1/flv/7182741.json" />
+                    <input id="msURL" type="text" value="" />
                     <button onclick="switch_url()">Switch to URL</button>
                 </div>
             </div>
